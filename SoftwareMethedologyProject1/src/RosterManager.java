@@ -1,0 +1,2 @@
+public class RosterManager {
+}
