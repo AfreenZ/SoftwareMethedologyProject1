@@ -1,5 +1,5 @@
 import java.util.Calendar;
-poopy
+private int ye;
 public class Date implements Comparable<Date> {
     private int year;
     private int month;
