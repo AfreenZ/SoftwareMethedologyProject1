@@ -1,6 +1,31 @@
+package groupPackage;
+
 import java.util.Calendar;
-private int ye;
+
 public class Date implements Comparable<Date> {
+
+    public static final int JANUARY = 1;
+    public static final int FEBRUARY = 2;
+    public static final int MARCH = 3;
+    public static final int APRIL = 4;
+    public static final int MAY = 5;
+    public static final int JUNE = 6;
+    public static final int JULY = 7;
+    public static final int AUGUST = 8;
+    public static final int SEPTEMBER = 9;
+    public static final int OCTOBER = 10;
+    public static final int NOVEMBER = 11;
+    public static final int DECEMBER = 12;
+    public static final int MAX_MONTH= 12;
+    public static final int MAX_DAYS_IN_MONTH = 31;
+    public static final int MID_DAYS_IN_MONTH = 30;
+    public static final int MIN_DAYS_IN_MONTH = 28;
+    public static final int MIN_YEAR = 2005;
+    public static final int LEAP_YEAR_DAY = 29;
+    public static final int QUADRENNIAL = 4;
+    public static final int CENTENNIAL = 100;
+    public static final int QUATERCENTENNIAL = 400;
+    public static final int ZERO = 0;
     private int year;
     private int month;
     private int day;
@@ -67,28 +92,7 @@ public class Date implements Comparable<Date> {
         int currentYear = newCal.get(Calendar.YEAR);
         int currentMonth = newCal.get(Calendar.MONTH);
         int currentDay = newCal.get(Calendar.DATE);
-        public static final int JANUARY = 1;
-        public static final int FEBRUARY = 2;
-        public static final int MARCH = 3;
-        public static final int APRIL = 4;
-        public static final int MAY = 5;
-        public static final int JUNE = 6;
-        public static final int JULY = 7;
-        public static final int AUGUST = 8;
-        public static final int SEPTEMBER = 9;
-        public static final int OCTOBER = 10;
-        public static final int NOVEMBER = 11;
-        public static final int DECEMBER = 12;
-        public static final int MAX_MONTH= 12;
-        public static final int MAX_DAYS_IN_MONTH = 31;
-        public static final int MID_DAYS_IN_MONTH = 30;
-        public static final int MIN_DAYS_IN_MONTH = 28;
-        public static final int MIN_YEAR = 2005;
-        public static final int LEAP_YEAR_DAY = 29;
-        public static final int QUADRENNIAL = 4;
-        public static final int CENTENNIAL = 100;
-        public static final int QUATERCENTENNIAL = 400;
-        public static final int ZERO = 0;
+
 
         if(this.year>=MIN_YEAR){ //Student is less than 16 years old
             return false;
@@ -142,6 +146,15 @@ public class Date implements Comparable<Date> {
 
     }
 
+    @Override
+    public int compareTo(Date date) {
+        if(this.year > date.year){
+            return 1;
+        }
+        return 0;
+    }
+}
+
 
     /**
      Testbed with test cases to check if it is valid.  CHANGE UP
@@ -159,13 +172,14 @@ public class Date implements Comparable<Date> {
             }
         }
     }
-}
 
 
 
 
 
-}
+
+
+
 
 
 
