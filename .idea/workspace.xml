@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Working on Roster.java, still figuring out print methods">
+    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Update from facetime call">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoftwareMethedologyProject1/src/Roster.java" beforeDir="false" afterPath="$PROJECT_DIR$/SoftwareMethedologyProject1/src/Roster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoftwareMethedologyProject1/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/SoftwareMethedologyProject1/src/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675549125794</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update from facetime call">
+      <created>1675562604170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675562604170</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +109,7 @@
     <MESSAGE value="==" />
     <MESSAGE value="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
     <MESSAGE value="Working on Roster.java, still figuring out print methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on Roster.java, still figuring out print methods" />
+    <MESSAGE value="Update from facetime call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update from facetime call" />
   </component>
 </project>

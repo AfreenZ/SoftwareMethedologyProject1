@@ -48,10 +48,18 @@ public class Profile implements Comparable<Profile>{
     /**
      Overrides compareTo
      */
-
+    //this should compare last names
     @Override
     public int compareTo(Profile o) {
-        return 0;
+        Profile other = (Profile) o;
+        if (equals(other)){
+            return 0;
+        }
+        int compareLastNames = this.getLastName().compareTo(other.getLastName());
+        if (compareLastNames == 0){
+            return this.getLastName().compareTo(other.getLastName());
+        }
+        return compareLastNames;
     }
     /**
      * returns String last name
@@ -73,6 +81,7 @@ public class Profile implements Comparable<Profile>{
     public Date getDOB(){
         return this.dob;
     }
+
 
 
 }

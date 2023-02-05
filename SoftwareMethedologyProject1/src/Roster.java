@@ -1,5 +1,7 @@
 package groupPackage;
 
+import java.util.Arrays;
+
 public class Roster {
     private Student[] roster;
     private int size;
@@ -57,8 +59,20 @@ public class Roster {
         }
         return false;
     } //if the student is in roster
-    public void sortbyName(){
-        //
+    public void sort(){
+        //sort by last name
+        int n = roster.length;
+        for(int i =0; i < n; i++){
+            int min = i;
+            for(int j = i+1; j < n; j++){
+                int compare = this.roster[j].compareTo(this.roster[i]);
+                if (compare > 1){
+                    i = j;
+                }
+            }
+            String str1 = roster[i].toString();
+            String str2 = roster[i++].toString();
+        }
     }
     public void sortbySchoolMajor(){
 
@@ -72,4 +86,18 @@ public class Roster {
     } //print roster sorted by profiles
     public void printBySchoolMajor() {} //print roster sorted by school major
     public void printByStanding() {} //print roster sorted by standing
+
+   /* public static void main(String[] args){
+        String[] testCases = {""};
+
+        for ( int i = 0; i < testCases.length; i++){
+            Date testCase = new Date(testCases[i]);
+
+            if (testCase.isValid()){
+                System.out.println("Test Case #" + String.valueOf(i+1)  + ": " + testCases[i] + " " + "Passed");
+            } else {
+                System.out.println("Test Case #" + String.valueOf(i+1)  + ": " + testCases[i] + " " + "Failed");
+            }
+        }
+    }*/
 }

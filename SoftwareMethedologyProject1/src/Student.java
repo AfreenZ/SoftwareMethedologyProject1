@@ -1,7 +1,5 @@
 package groupPackage;
 
-import java.util.Scanner;
-import java.util.StringTokenizer;
 public class Student implements Comparable <Student>{
     private Profile profile;
     private Major major;
@@ -12,6 +10,23 @@ public class Student implements Comparable <Student>{
         this.profile = profile;
         this.major = major;
         this.creditCompleted = creditCompleted;
+    }
+    public Profile getProfile(){
+        return this.profile;
+    }
+
+    /**
+     * returns String first name
+     */
+    public String getMajor(){
+        return this.getMajor();
+    }
+
+    /**
+     returns Date dob
+     */
+    public Date getCreditCompleted(){
+        return this.getCreditCompleted();
     }
 
     /**
@@ -43,24 +58,17 @@ public class Student implements Comparable <Student>{
 
     @Override
     public int compareTo(Student o) {
-        if(obj instanceof Student){
-            Student compareStudent = (Student)obj; //Typecasting obj to Student type
-            if(compareStudent.creditCompleted == compareStudent.creditCompleted){ //if profiles are both the same
-                return 1;
-            }
-        }
         return 0;
     }
-}
+
+
     public static void main(String[] args){
         //create a profile
         //assign a major
         //create credits completed
-        //put into student
+        //put into studen
 
-
-
-    String[] testCases = {"-1/31/2023","9/2/2022","13/31/2003","3/32/2003","2/29/2003","3/1/2002","7/11/2002"};
+        String[] testCases = {"-1/31/2023","9/2/2022","13/31/2003","3/32/2003","2/29/2003","3/1/2002","7/11/2002"};
 
         for ( int i = 0; i < testCases.length; i++){
             Date testCase = new Date(testCases[i]);
@@ -71,6 +79,8 @@ public class Student implements Comparable <Student>{
                 System.out.println("Test Case #" + String.valueOf(i+1)  + ": " + testCases[i] + " " + "Failed");
             }
         }
+
+    }
 
 }
 
