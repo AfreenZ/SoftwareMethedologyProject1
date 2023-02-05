@@ -43,7 +43,35 @@ public class Student implements Comparable <Student>{
 
     @Override
     public int compareTo(Student o) {
+        if(obj instanceof Student){
+            Student compareStudent = (Student)obj; //Typecasting obj to Student type
+            if(compareStudent.creditCompleted == compareStudent.creditCompleted){ //if profiles are both the same
+                return 1;
+            }
+        }
         return 0;
     }
 }
+    public static void main(String[] args){
+        //create a profile
+        //assign a major
+        //create credits completed
+        //put into student
+
+
+
+    String[] testCases = {"-1/31/2023","9/2/2022","13/31/2003","3/32/2003","2/29/2003","3/1/2002","7/11/2002"};
+
+        for ( int i = 0; i < testCases.length; i++){
+            Date testCase = new Date(testCases[i]);
+
+            if (testCase.isValid()){
+                System.out.println("Test Case #" + String.valueOf(i+1)  + ": " + testCases[i] + " " + "Passed");
+            } else {
+                System.out.println("Test Case #" + String.valueOf(i+1)  + ": " + testCases[i] + " " + "Failed");
+            }
+        }
+
+}
+
 

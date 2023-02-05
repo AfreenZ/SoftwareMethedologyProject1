@@ -1,3 +1,5 @@
+package groupPackage;
+
 /**
  This class provides the profile of a student with data such as their last name, first name and date of birth.
  */
@@ -46,11 +48,11 @@ public class Profile implements Comparable<Profile>{
     /**
      Overrides compareTo
      */
+
     @Override
-    public String compareTo(){
-
+    public int compareTo(Profile o) {
+        return 0;
     }
-
     /**
      * returns String last name
      */
