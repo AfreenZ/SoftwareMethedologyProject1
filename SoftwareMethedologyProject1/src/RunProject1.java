@@ -1,6 +1,7 @@
-/** a driver class to run project 1*/
+package groupPackage;
+
 public class RunProject1 {
-    public static void main(String[]args){
+    public static void main(String[] args){
         new RosterManager().run();
     }
 }

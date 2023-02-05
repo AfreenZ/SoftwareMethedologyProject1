@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
+    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Changes to RosterManager. Can implement once roster is done. Prolly need to add more helper methods." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +67,17 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jejkfskjefhk" />
