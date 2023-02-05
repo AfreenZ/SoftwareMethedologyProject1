@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
+    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Changes to Student Class. Need to figure out a compareTo and testbed main. Once again the package name is package groupPackage." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,13 +65,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675485862910</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changes to Student Class. Need to figure out a compareTo and testbed main. Once again the package name is package groupPackage.">
+      <created>1675488160942</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675488160942</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jejkfskjefhk" />
     <MESSAGE value="==" />
     <MESSAGE value="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
-    <option name="LAST_COMMIT_MESSAGE" value="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
+    <MESSAGE value="Changes to Student Class. Need to figure out a compareTo and testbed main. Once again the package name is package groupPackage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to Student Class. Need to figure out a compareTo and testbed main. Once again the package name is package groupPackage." />
   </component>
 </project>
