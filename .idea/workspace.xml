@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Update from facetime call">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Changes to RosterManager. Can implement once roster is done. Prolly need to add more helper methods." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,24 +16,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-    <option name="sortByName" value="true" />
-  </component>
   <component name="ProjectId" id="2LCkVEX4tkJMMLX8vflpW5GuUU3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Afreen Z/Documents/GitHub/SoftwareMethedologyProject1",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/himan/Documents/Spring 2023/Software Methodology/All Project 1/SoftwareMethedologyProject1&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,21 +65,7 @@
       <option name="project" value="LOCAL" />
       <updated>1675485862910</updated>
     </task>
-    <task id="LOCAL-00005" summary="Working on Roster.java, still figuring out print methods">
-      <created>1675549125794</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1675549125794</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update from facetime call">
-      <created>1675562604170</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1675562604170</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,8 +83,6 @@
     <MESSAGE value="jejkfskjefhk" />
     <MESSAGE value="==" />
     <MESSAGE value="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
-    <MESSAGE value="Working on Roster.java, still figuring out print methods" />
-    <MESSAGE value="Update from facetime call" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update from facetime call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
   </component>
 </project>
