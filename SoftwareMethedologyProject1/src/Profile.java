@@ -49,15 +49,36 @@ public class Profile implements Comparable<Profile>{
      Overrides compareTo
      */
     //this should compare last names
-    @Override
     public int compareTo(Profile o) {
         Profile other = (Profile) o;
-        if (equals(other)){
+        if (equals(other)) {
             return 0;
         }
+        //.compareTo method of string class NOT RECURSIVE
         int compareLastNames = this.getLastName().compareTo(other.getLastName());
-        if (compareLastNames == 0){
-            return this.getLastName().compareTo(other.getLastName());
+        if (compareLastNames == -1){
+            return -1;
+        }
+        if (compareLastNames == 1){
+            return 1;
+        }
+        if (compareLastNames == 0) {
+            int compareFirstNames = this.getFirstName().compareTo(other.getFirstName());
+            if (compareFirstNames == -1){
+                return -1;
+            }
+            if (compareFirstNames == 1){
+                return 1;
+            }
+            if (compareFirstNames == 0) {
+                int compareDOB = this.getDOB().compareTo(other.getDOB());
+                if (compareDOB == -1){
+                    return -1;
+                }
+                if (compareDOB == 1){
+                    return 1;
+                }
+            }
         }
         return compareLastNames;
     }
