@@ -10,7 +10,8 @@ public class Date implements Comparable<Date> {
     public static final int APRIL = 4;
     public static final int MAY = 5;
     public static final int JUNE = 6;
-    public static final int JULY = 7;
+    public static final in
+    t JULY = 7;
     public static final int AUGUST = 8;
     public static final int SEPTEMBER = 9;
     public static final int OCTOBER = 10;
@@ -159,7 +160,7 @@ public class Date implements Comparable<Date> {
     /**
      Testbed with test cases to check if it is valid.  CHANGE UP
      */
-    public static void main(String[] args){
+    /**public static void main(String[] args){
         String[] testCases = {"-1/31/2023","9/2/2022","13/31/2003","3/32/2003","2/29/2003","3/1/2002","7/11/2002"};
 
         for ( int i = 0; i < testCases.length; i++){
@@ -170,7 +171,7 @@ public class Date implements Comparable<Date> {
             } else {
                 System.out.println("Test Case #" + String.valueOf(i+1)  + ": " + testCases[i] + " " + "Failed");
             }
-        }
+        }*/
     }
 
 

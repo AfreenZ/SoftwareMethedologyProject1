@@ -49,6 +49,8 @@ public class Profile implements Comparable<Profile>{
      Overrides compareTo
      */
     //this should compare last names
+    @Override
+    //compare April March (this) and Jane Doe (other)
     public int compareTo(Profile o) {
         Profile other = (Profile) o;
         if (equals(other)) {
@@ -103,6 +105,20 @@ public class Profile implements Comparable<Profile>{
         return this.dob;
     }
 
+    public static void main(String[] args){
+        Date date1 = new Date("7/11/2002");
+        Date date2 = new Date("9/13/2002");
+        Profile profile1 = new Profile("Afreen","Doe",date1);
+        Profile profile2 = new Profile("Hima","Doe",date2);
+        System.out.println(profile1.toString());
+        System.out.println(profile2.toString());
+        int x = profile1.compareTo(profile2);
+        System.out.println(x);
+        Profile[] arr = new Profile[2];
+        if(x < 0){arr[0] = profile1; arr[1]= profile2;}else{arr[0] = profile2; arr[1]= profile1;}
+        for(int i = 0; i < 2; i++){
+            System.out.println(arr[i]);
+        }
 
-
+    }
 }

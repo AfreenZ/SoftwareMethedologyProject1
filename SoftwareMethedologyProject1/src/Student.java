@@ -25,7 +25,7 @@ public class Student implements Comparable <Student>{
     /**
      returns Date dob
      */
-    public Date getCreditCompleted(){
+    public int getCreditCompleted(){
         return this.getCreditCompleted();
     }
 
@@ -58,7 +58,35 @@ public class Student implements Comparable <Student>{
 
     @Override
     public int compareTo(Student o) {
-        return 0;
+
+        Student other = (Student) o;
+        if (equals(other)){
+            return 0;
+        }
+        int compareSchool = this.getMajor().compareTo(other.getMajor());
+        if (compareSchool == -1){
+            return -1;
+        }
+        if (compareSchool == 1){
+            return 1;
+        }
+        if (compareSchool == 0){
+            return 0;
+        }
+        return compareSchool;
+        /**int compareProfile = this.getProfile().compareTo(other.getProfile());
+         if (compareProfile == -1){
+         return -1;
+         }
+         if (compareProfile == 1){
+         return 1;
+         }
+         if (compareProfile == 0) {
+         //once you get to this point all profiles are ordered alphabetically
+         //now we order by school
+         return 0;
+         }
+         return compareProfile;*/
     }
 
 
@@ -83,5 +111,3 @@ public class Student implements Comparable <Student>{
     }
 
 }
-
-
