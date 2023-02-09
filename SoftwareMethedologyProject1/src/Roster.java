@@ -6,15 +6,14 @@ public class Roster {
     private Student[] roster;
     private int size;
 
-    public void finalRoster() {
-        roster = new Student[4];
-        size = 0;
+    public Roster() {
+        this.roster = new Student[4];
+        this.size = 0;
     }
 
     private int find(Student student) {
-        int rosterSize = this.size;
-        for (int i = 0; i < rosterSize; i++) {
-            if (roster[i].equals(student)) {
+        for (int i = 0; i < size; i++) {
+            if (roster[i].equals(student) && roster[i]!=null) {
                 return i;
             }
         }
@@ -24,24 +23,38 @@ public class Roster {
 
     private void grow() {
         Student[] newRoster = new Student[roster.length + 4];
-        for (int i = 0; i < roster.length; i++) {
+        for (int i = 0; i < this.roster.length; i++) {
             newRoster[i] = roster[i];
         }
         roster = newRoster;
     } //increase the array capacity by 4
 
     public boolean add(Student student) {
-        for (int i = 0; i < this.roster.length; i++) {
-            if (roster[i] == null) {
-                roster[i] = student;
-                size++;
-            }
+        if(find(student)!=-1){
+            return false;
         }
-        this.grow();
-        roster[roster.length - 4] = student;
-        this.size++;
+
+        if(size==this.roster.length) {
+            grow();
+        }
+
+        if(size<this.roster.length) {
+            for (int i = 0; i < this.roster.length; i++) {
+                if (roster[i] == null) {
+                    roster[i] = student;
+                    break;
+                }
+            }
+            size++;
+
+        }
+
+        // roster[roster.length - 4] = student;
+        //this.size++;
         return true;
-    } //add student to end of array
+    }
+
+    //add student to end of array
 
     public boolean remove(Student student) {
         int index = find(student);
@@ -81,24 +94,37 @@ public class Roster {
         }
     }
 
+    public Student[] getRoster(){
+        return this.roster;
+    }
+
+    public int size(){
+        return this.size;
+    }
+
     public void print() {
-        for (int i = 0; i < roster.length; i++) {
+        //System.out.println("yfweyurguwruy");
+        for (int i = 0; i < this.size; i++) {
             int ptr = i;
-            for (int j = i + 1; j < roster.length; j++) {
-                int checkProfile = roster[j].getProfile().compareTo(roster[i].getProfile());
+            for (int j = i + 1; j < this.size-1; j++) {
+
+                int checkProfile = this.roster[j].getProfile().compareTo(this.roster[i].getProfile());
+                //System.out.println(checkProfile);
                 if (checkProfile < 0) {
                     ptr = j;
                 }
             }
             if (i != ptr) {
-                Student temp = roster[i];
-                roster[i] = roster[ptr];
-                roster[ptr] = temp;
+                Student temp = this.roster[i];
+                this.roster[i] = this.roster[ptr];
+                this.roster[ptr] = temp;
             }
         }
-        for (int k = 0; k < roster.length; k++) {
-            System.out.println(roster[k]);
-        }
+
+        /**Student temp = this.roster[0];
+         this.roster[0] = this.roster[this.size-1];
+         this.roster[this.size-1] = temp;*/
+
     }
 
     //print roster sorted by profiles
@@ -145,17 +171,18 @@ public class Roster {
     } //print roster sorted by standing
 
     public static void main(String[] args) {
-        /**String[] testCases = {""};
+        String[] testCases = {""};
 
-         for (int i = 0; i < testCases.length; i++) {
-         Date testCase = new Date(testCases[i]);
+        for (int i = 0; i < testCases.length; i++) {
+            Date testCase = new Date(testCases[i]);
 
-         if (testCase.isValid()) {
-         System.out.println("Test Case #" + String.valueOf(i + 1) + ": " + testCases[i] + " " + "Passed");
-         } else {
-         System.out.println("Test Case #" + String.valueOf(i + 1) + ": " + testCases[i] + " " + "Failed");
-         }
-         }*/
+            if (testCase.isValid()) {
+                System.out.println("Test Case #" + String.valueOf(i + 1) + ": " + testCases[i] + " " + "Passed");
+            } else {
+                System.out.println("Test Case #" + String.valueOf(i + 1) + ": " + testCases[i] + " " + "Failed");
+            }
+        }
 
 
     }
+}

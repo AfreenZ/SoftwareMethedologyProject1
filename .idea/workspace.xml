@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="Profile" />
+    <list default="true" id="6f76f104-bbe5-441c-9280-99f9d5c27d09" name="Changes" comment="RosterManager" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675819199577</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="RosterManager">
+      <created>1675911339533</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675911339533</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +106,7 @@
     <MESSAGE value="Major class made with getter methods. Date class is working as intended but need to figure out what we want the compareTo to do." />
     <MESSAGE value="Complete Profile CompareTo method" />
     <MESSAGE value="Changed Profile, Roster and Student classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Profile, Roster and Student classes" />
+    <MESSAGE value="RosterManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="RosterManager" />
   </component>
 </project>
