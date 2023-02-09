@@ -46,44 +46,53 @@ public class Profile implements Comparable<Profile>{
     }
 
     /**
-     Overrides compareTo
+     Overrides compareTo. We compare by last name, first name, and date of birth.
      */
-    //this should compare last names
+
     @Override
-    //compare April March (this) and Jane Doe (other)
     public int compareTo(Profile o) {
         Profile other = (Profile) o;
-        if (equals(other)) {
-            return 0;
-        }
+        int answer = 1;
+
         //.compareTo method of string class NOT RECURSIVE
-        int compareLastNames = this.getLastName().compareTo(other.getLastName());
-        if (compareLastNames == -1){
+        //int compareLastNames = this.lname.compareTo(other.getLastName());
+        //System.out.println(compareLastNames);
+
+        if (this.lname.compareTo(other.getLastName()) < 0){
+            answer = -1;
             return -1;
         }
-        if (compareLastNames == 1){
+        else if (this.lname.compareTo(other.getLastName())> 0){
+            answer = 1;
             return 1;
         }
-        if (compareLastNames == 0) {
-            int compareFirstNames = this.getFirstName().compareTo(other.getFirstName());
-            if (compareFirstNames == -1){
+        else if(this.lname.compareTo(other.getLastName()) == 0){
+            int compareFirstNames = this.fname.compareTo(other.getFirstName());
+            System.out.println(compareFirstNames);
+
+            if(compareFirstNames < 0){
                 return -1;
             }
-            if (compareFirstNames == 1){
+            else if(compareFirstNames > 0){
                 return 1;
             }
-            if (compareFirstNames == 0) {
-                int compareDOB = this.getDOB().compareTo(other.getDOB());
-                if (compareDOB == -1){
-                    return -1;
-                }
-                if (compareDOB == 1){
-                    return 1;
-                }
+            else{
+                return 0;
             }
         }
-        return compareLastNames;
+
+        return 0;
+
+        /**
+         if (compareDOB == 1){
+         answer = 1;
+         return 1;
+         }
+         */
+
     }
+
+
     /**
      * returns String last name
      */
@@ -105,20 +114,6 @@ public class Profile implements Comparable<Profile>{
         return this.dob;
     }
 
-    public static void main(String[] args){
-        Date date1 = new Date("7/11/2002");
-        Date date2 = new Date("9/13/2002");
-        Profile profile1 = new Profile("Afreen","Doe",date1);
-        Profile profile2 = new Profile("Hima","Doe",date2);
-        System.out.println(profile1.toString());
-        System.out.println(profile2.toString());
-        int x = profile1.compareTo(profile2);
-        System.out.println(x);
-        Profile[] arr = new Profile[2];
-        if(x < 0){arr[0] = profile1; arr[1]= profile2;}else{arr[0] = profile2; arr[1]= profile1;}
-        for(int i = 0; i < 2; i++){
-            System.out.println(arr[i]);
-        }
 
-    }
+
 }
